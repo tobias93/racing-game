@@ -6,3 +6,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+vulkano = "0.28.0"
+anyhow = { version = "1.0.53", features = ["backtrace"] }
+log = "0.4.14"
+pretty_env_logger = "0.4.0"
+dotenv = "0.15.0"
+vulkano-win = "0.28.0"
+winit = "0.26"
+vulkano-shaders = "0.28.0"
