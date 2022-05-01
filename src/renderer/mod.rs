@@ -1,4 +1,4 @@
-pub mod render3d;
+pub mod object3d;
 pub mod renderer;
 mod shaders;
 

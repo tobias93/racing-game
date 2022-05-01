@@ -6,7 +6,7 @@ use vulkano::device::Device;
 pub mod vertex;
 
 pub fn triangle(device: &Arc<Device>) -> Result<Arc<CpuAccessibleBuffer<[vertex::Vertex]>>> {
-    use crate::renderer::render3d::vertex::Vertex;
+    use crate::renderer::object3d::vertex::Vertex;
     use vulkano::buffer::{BufferUsage, CpuAccessibleBuffer};
 
     let vertex_buffer = CpuAccessibleBuffer::from_iter(

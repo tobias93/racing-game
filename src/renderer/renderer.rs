@@ -1,5 +1,5 @@
-use crate::renderer::render3d::vertex::Vertex;
-use crate::renderer::render3d::{triangle, vertex};
+use crate::renderer::object3d::vertex::Vertex;
+use crate::renderer::object3d::{triangle, vertex};
 use crate::renderer::shaders;
 use anyhow::{Context, Result};
 use log::{debug, info};
@@ -63,7 +63,7 @@ impl Renderer {
             .build(&event_loop)?;
         let surface = create_vk_surface_from_handle(window, Arc::clone(&instance))?;
 
-        // chose and open device
+        // choose and open device
         let device_extensions = DeviceExtensions {
             khr_swapchain: true,
             ..DeviceExtensions::none()
